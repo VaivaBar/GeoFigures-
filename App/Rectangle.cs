@@ -40,5 +40,16 @@ namespace GeoFigures
         }
          public double GetArea() => Width * Height;
         public double GetPerimeter() => 2 * (Width + Height);
+
+        public Rectangle()
+        {
+            
+        }
+        public Rectangle(double width, double height)
+        {
+            Width = width;
+            Height = height;
+
+        }
     }
 }

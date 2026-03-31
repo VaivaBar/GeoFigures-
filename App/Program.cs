@@ -10,6 +10,9 @@ using System.ComponentModel;
 // Aprašykite Rectangle klasę. Pridėkite Width ir Height property. Patikrinkite ar reikšmės teigiamos;
 // Kiekvienoje iš aprašytu klasių pridėkite metodus GetArea() ir GetPerimeter(). Aprašykite jų funkcialumą.
 
+// Projekte GeoFigures kiekvienoje iš geometrinių figūrų pridėkite po du konstruktorius. 
+// Pirmas negauna ne vieno parametro, antras gauna tiek parametrų kiek turi properčių ir juos inicializuoją;
+
 
 namespace GeoFigures
 {
