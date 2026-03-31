@@ -3,11 +3,11 @@ using System;
 
 namespace GeoFigures
 {
-    public class Circle
+    public class Circle : Shape
     {
         public double Radius { get; set; }
-        public double GetArea() => Math.PI * Math.Pow(Radius, 2);
-        public double GetPerimeter() => 2 * Math.PI * Radius;
+        public override double GetArea() => Math.PI * Math.Pow(Radius, 2);
+        public override double GetPerimeter() => 2 * Math.PI * Radius;
 
         
     public Circle()

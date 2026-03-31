@@ -13,11 +13,14 @@ using System.ComponentModel;
 // Projekte GeoFigures kiekvienoje iš geometrinių figūrų pridėkite po du konstruktorius. 
 // Pirmas negauna ne vieno parametro, antras gauna tiek parametrų kiek turi properčių ir juos inicializuoją;
 
+// Projekte GeoFigures aprašykite Shape klasę, kuri turės GetArea ir GetPerimeter metodus;
+// Peveldėkite Shape klasę Rectangle, Circle ir Triangle klasėse;
+// Main metode sukurkite sąrašą Shape ir įdėkite keletą Rectangle, Circle ir Triangle
+
 
 namespace GeoFigures
 {
    
-
      class Program
     {
         static void Main(string[] args)
@@ -41,7 +44,13 @@ namespace GeoFigures
             Console.WriteLine("Circles: ");
             Console.WriteLine($"1st Circle: Area = {c1.GetArea():F2}");
             Console.WriteLine($"2nd Circle: Area = {c2.GetArea():F2}");
+
+            List<Shape> figures = new List<Shape>();
+            figures.Add(new Circle());
+            figures.Add(new Rectangle());
+            figures.Add(new Triangle());
         }
+
     }
     
 }

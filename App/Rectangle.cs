@@ -2,7 +2,7 @@ using System;
 
 namespace GeoFigures
 {
-    public class Rectangle
+    public class Rectangle : Shape
     {
         private double _width;
         private double _height;
@@ -38,8 +38,8 @@ namespace GeoFigures
                 }
             }
         }
-         public double GetArea() => Width * Height;
-        public double GetPerimeter() => 2 * (Width + Height);
+         public override double GetArea() => Width * Height;
+        public override double GetPerimeter() => 2 * (Width + Height);
 
         public Rectangle()
         {
